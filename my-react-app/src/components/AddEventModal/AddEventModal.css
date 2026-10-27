@@ -1,0 +1,90 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(20, 28, 52, 0.55);
+}
+
+.modal-box {
+  width: min(600px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 7px 0 0;
+  color: #293650;
+}
+
+.modal-close {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 50%;
+  background: #f0f2f7;
+  font-size: 22px;
+}
+
+.modal-box form {
+  display: grid;
+  gap: 15px;
+}
+
+.modal-box label {
+  display: grid;
+  gap: 7px;
+  color: #4c5870;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-box input,
+.modal-box select,
+.modal-box textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #dce1eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal-box textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-cancel,
+.modal-submit {
+  border: 0;
+  border-radius: 7px;
+  padding: 11px 17px;
+  font-weight: 700;
+}
+
+.modal-cancel {
+  background: #edf0f5;
+  color: #556176;
+}
+
+.modal-submit {
+  background: #4657d9;
+  color: white;
+}

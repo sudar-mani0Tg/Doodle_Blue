@@ -1,0 +1,142 @@
+/* Main page layout */
+
+.app {
+  min-height: 100vh;
+}
+
+/* Common container */
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Section heading */
+
+.events-section {
+  padding: 70px 0 85px;
+  background: #ffffff;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.section-heading h2,
+.about-section h2 {
+  margin: 8px 0;
+  color: #293650;
+  font-size: 30px;
+}
+
+.section-heading p,
+.about-section p {
+  margin: 0;
+  color: #6d788d;
+  font-size: 14px;
+}
+
+.eyebrow {
+  color: #6b78a2;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+
+.primary-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 17px;
+  background: #4657d9;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #3546bd;
+  transform: translateY(-1px);
+}
+
+/* Event toolbar */
+
+.event-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-input,
+.event-toolbar select {
+  height: 44px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  padding: 0 13px;
+  outline: none;
+  background: white;
+  color: #293650;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.search-input:focus,
+.event-toolbar select:focus {
+  border-color: #6473df;
+}
+
+.favorite-filter {
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  padding: 0 15px;
+  background: white;
+  color: #56627a;
+  cursor: pointer;
+}
+
+.favorite-filter.active {
+  background: #fff7dc;
+  border-color: #e8d580;
+  color: #80620b;
+}
+
+/* About */
+
+.about-section {
+  padding: 75px 0;
+  background: #f2f5ff;
+}
+
+.about-section p {
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 26px);
+  }
+
+  .section-heading {
+    display: grid;
+    align-items: start;
+  }
+
+  .event-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .search-input {
+    flex-basis: 100%;
+  }
+}

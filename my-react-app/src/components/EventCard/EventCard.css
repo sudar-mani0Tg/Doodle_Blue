@@ -1,0 +1,157 @@
+.event-card {
+  display: grid;
+  grid-template-columns: 205px 1fr;
+  min-height: 260px;
+  overflow: hidden;
+  border: 1px solid #e0e5ef;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(40, 55, 90, 0.06);
+}
+
+.event-card-image {
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.event-card-image::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+}
+
+.event-card-image::after {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.event-card-image span {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.event-card-image.tech {
+  background: linear-gradient(150deg, #5967e4, #3544ba);
+}
+
+.event-card-image.culture {
+  background: linear-gradient(150deg, #7659df, #4338a8);
+}
+
+.event-card-image.workshop {
+  background: linear-gradient(150deg, #4e68d8, #2e46a6);
+}
+
+.event-card-content {
+  padding: 26px 28px;
+}
+
+.event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-category {
+  color: #5d6da8;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.favorite-button {
+  border: 0;
+  background: transparent;
+  color: #9da6b7;
+  font-size: 24px;
+}
+
+.favorite-active {
+  color: #e2b52b;
+}
+
+.event-card h3 {
+  margin: 8px 0;
+  color: #293650;
+  font-size: 25px;
+}
+
+.event-description {
+  margin: 0 0 18px;
+  color: #69758b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  color: #69758b;
+  font-size: 12px;
+}
+
+.event-details b {
+  color: #3e4a61;
+}
+
+.event-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.register-button,
+.cancel-button,
+.favorite-action,
+.remove-event-button {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 13px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.register-button {
+  background: #4657d9;
+  color: white;
+}
+
+.cancel-button {
+  background: #edf0ff;
+  color: #3f4fca;
+}
+
+.favorite-action {
+  background: #f4efe0;
+  color: #78601d;
+}
+
+.remove-event-button {
+  background: #faecef;
+  color: #9b4b5b;
+}
+
+@media (max-width: 750px) {
+  .event-card {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card-image {
+    min-height: 150px;
+  }
+}

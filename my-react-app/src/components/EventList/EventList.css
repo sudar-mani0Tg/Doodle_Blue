@@ -1,0 +1,23 @@
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.no-events {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed #ccd3e3;
+  border-radius: 12px;
+  background: #fafbff;
+}
+
+.no-events h3 {
+  margin: 0 0 8px;
+  color: #293650;
+}
+
+.no-events p {
+  margin: 0;
+  color: #748096;
+}
